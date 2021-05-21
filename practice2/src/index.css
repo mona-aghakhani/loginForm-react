@@ -1,0 +1,259 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.959);
+}
+.app-outer {
+  margin: 100px auto;
+  background-color: rgb(201, 193, 193);
+  max-width: 65vh;
+  padding: 20px;
+}
+/* .app{
+  max-width: 65vh;
+} */
+.app-container {
+  background-color: rgb(36, 51, 60);
+  direction: rtl;
+  max-width: 60vh;
+  /* height: 70vh; */
+  /* margin: 100px auto; */
+  padding: 20px;
+  color: rgb(245, 235, 235);
+  box-shadow: 5px rgb(85, 82, 82);
+  border-radius: 2px;
+}
+.box-controller {
+  display: flex;
+}
+.controller {
+  width: 50%;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgb(67, 83, 89);
+  padding: 8px;
+  margin-bottom: 15px;
+}
+/* .login-box{
+
+} */
+.box-container h3 {
+  text-align: center;
+  margin: 20px;
+  color: rgb(240, 248, 248);
+}
+.login-input {
+  background-color: transparent;
+  border: 1px solid rgb(153, 139, 139, 0.5);
+  margin-bottom: 20px;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px;
+  color: white;
+}
+/* .box-container input:first-of-type{
+  margin-bottom: 25px;
+
+} */
+.box-container .register-input {
+  background-color: transparent;
+  border: 1px solid rgb(153, 139, 139, 0.5);
+  margin-bottom: 20px;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px;
+  color: white;
+}
+.box-container select.register-input {
+  background-color: transparent;
+  border: 1px solid rgb(153, 139, 139, 0.5);
+  margin-bottom: 20px;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px;
+  
+  color: gray;
+  
+}
+.register-input option {
+  color: gray;
+}
+::-webkit-input-placeholder::first-letter {
+  color: red;
+  text-decoration: underline;
+}
+/* .top-input::first-letter::placeholder{
+content: "*";
+background-color: brown;
+font-size: 26px;
+} */
+.forget {
+  font-size: 10px;
+  color: rgb(6, 238, 180, 0.6);
+  margin: 10px 0 20px 0;
+}
+.btn {
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(6, 238, 180, 0.6);
+  border: none;
+  color: white;
+}
+.selected-controller {
+  background-color: rgb(6, 238, 180, 0.6);
+}
+.group-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.inner-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+.inner-input .top-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.group-name input {
+  width: 45%;
+  background-color: transparent;
+  border: 1px solid rgb(153, 139, 139, 0.5);
+  margin-bottom: 20px;
+  font-size: 12px;
+  height: 25px;
+  padding: 4px;
+  color: white;
+}
+
+/* .open-eye{
+  opacity: 1;
+} */
+.pass-wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 14px;
+}
+.icon {
+  position: absolute;
+  top: 16%;
+  left: 6%;
+}
+.icon-register {
+  position: absolute;
+  top: 16%;
+  left: 6%;
+}
+.notVisible {
+  visibility: hidden;
+}
+.err {
+  font-size: 12px;
+  color: rgb(248, 43, 43, 0.8);
+}
+.pass-err {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+}
+/* .modal-register{
+  width: 60%;
+  height: 70%;
+  background-color: rgb(217, 243, 209);
+  z-index: 999;
+} */
+.modal {
+  /* direction: rtl; */
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(200, 207, 205);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.modal-content {
+  /* direction: rtl; */
+  width: 500px;
+  background-color: rgba(139, 243, 217, 0.6);
+}
+.modal-header {
+  padding: 10px;
+}
+.modal-title {
+  margin: 0;
+}
+.modal-body {
+  /* direction: rtl; */
+  padding: 10px;
+  border: 1px solid black;
+}
+.parageraph {
+  margin: 10px;
+}
+.p-title {
+  color: rgb(11, 179, 11);
+  text-align: center;
+  font-size: 15px;
+}
+.modal-form {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  right: 100px;
+  bottom: 100px;
+  background-color: gray;
+}
+.modal-header-form {
+  /* padding: 10px; */
+  background-color: rgb(163, 156, 156);
+  width: 60vh;
+  padding: 20px;
+}
+.modal-body-form {
+  background-color: rgb(44, 43, 43, 0.95);
+  padding: 10px 20px 20px 20px;
+  border-radius: 2px;
+  box-shadow: 5px gainsboro;
+}
+.forget-title {
+  text-align: center;
+  color: rgb(225, 230, 230);
+  margin-bottom: 10px;
+}
+.close-button {
+  display: block;
+  margin: 20px auto;
+  background-color: rgb(82, 78, 78);
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 2px;
+}
+/* .test{
+  position: fixed;
+  left: 0;
+  right: 0;
+} */
